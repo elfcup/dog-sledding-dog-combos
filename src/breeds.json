@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Huksy",
+        "image": "./img/husky.jpg"
+    },
+    {
+        "name": "Labrador",
+        "image": "./img/lab.jpg"
+    },
+    {
+        "name": "Maltese",
+        "image": "./img/maltese.jpg"
+    },
+    {
+        "name": "Poodle",
+        "image": "./img/poodle.jpg"
+    },
+   
+    {
+        "name": "Chihuahua",
+        "image": "./img/chi.jpg"
+    }
+    
+]
