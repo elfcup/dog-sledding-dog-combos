@@ -1,24 +1,53 @@
 [
     {
         "name": "Huksy",
-        "image": "./img/husky.jpg"
+        "image": "./img/husky.jpg",
+        "score": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
     },
     {
         "name": "Labrador",
-        "image": "./img/lab.jpg"
+        "image": "./img/lab.jpg",
+        "score": [1,2,3,4,5]
     },
     {
         "name": "Maltese",
-        "image": "./img/maltese.jpg"
+        "image": "./img/maltese.jpg",
+        "score": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
     },
     {
         "name": "Poodle",
-        "image": "./img/poodle.jpg"
+        "image": "./img/poodle.jpg",
+        "score": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
     },
    
     {
         "name": "Chihuahua",
-        "image": "./img/chi.jpg"
+        "image": "./img/chi.jpg",
+        "score": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
     }
     
 ]

@@ -1,15 +1,15 @@
-// import React, { Component } from "react";
-// import logo from "./logo.svg";
-// import "./App.css";
+
 import React, { Component } from 'react';
 import './App.css';
 import breeds from './breeds.json'
 import image from './breeds.json'
 import Wrapper from './components/Wrapper'
 import Navpills from './components/Navpills'
-import Title from './components/Title'
 import BreedCard from './components/BreedCard'
-
+// import Home from './components/Pages/Home'
+import Survey from './components/Pages/Survey'
+// import Results from './components/Pages/Results'
+// import DogSledding from './components/Pages/DogSledding'
 
 class App extends Component {
   state = {
@@ -21,17 +21,13 @@ class App extends Component {
   componentDidMount() {
     }
 
-
-
-
-
   render() {
     return (
       <Wrapper>
         <Navpills
           message={this.state.message}
         />
-        <Title />
+        <Survey />
         {
           this.state.breeds.map(breeds => (
             <BreedCard
@@ -42,17 +38,7 @@ class App extends Component {
         }
       </Wrapper>
     );
-      // <div className="App">
-      //   <div className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <h2>Welcome to React</h2>
-      //   </div>
-      //   <p className="App-intro">
-      //     To get started, edit <code>src/App.js</code> and save to reload.
-      //   </p>
-      // </div>
-
-};
+     };
 }
 
 

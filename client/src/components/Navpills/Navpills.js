@@ -4,19 +4,25 @@ import "./Navpills.css";
 const Navpills = props => (
     <div>
         <ul className="nav nav-pills nav-justified">
-            <li><a href="/">Reset</a></li>
-            <li
-                // className={props.message.indexOf('incorrectly') !== -1 ? 
-                //     "desc-incorrect" : 
-                //     props.message.indexOf('correctly') !== -1 ?
-                //         "desc-correct" :
-                //         "desc-normal"}
-            >
-                {props.message}
-            </li>
-            {/* <li>Score: <span style={{color: "red"}}>{props.curScore}</span> | Top Score: {props.topScore}</li> */}
-        </ul>
-    </div>
+                <li onClick={() => props.handlePageChange("Home")}>
+                    <a>Home</a>
+                </li>
+                <li onClick={() => props.handlePageChange("Survey")}>
+                    <a>Survey</a>
+                </li>
+                <li onClick={() => props.handlePageChange("Results")}>
+                    <a>Results</a>
+                </li>
+                <li onClick={() => props.handlePageChange("DogSledding")}>
+                    <a>DogSledding</a>
+                </li>
+            </ul>
+);
+            <p><a href="/">Reset</a></p>
+        
+            {/* <p> {props.message} </p> */}
+            </div>
+          
 );
 
 export default Navpills;
