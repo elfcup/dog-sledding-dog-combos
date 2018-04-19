@@ -1,28 +1,15 @@
 import React from "react";
 import "./Navpills.css";
+import { Link } from "react-router-dom";
 
-const Navpills = props => (
-    <div>
-        <ul className="nav nav-pills nav-justified">
-                <li onClick={() => props.handlePageChange("Home")}>
-                    <a>Home</a>
-                </li>
-                <li onClick={() => props.handlePageChange("Survey")}>
-                    <a>Survey</a>
-                </li>
-                <li onClick={() => props.handlePageChange("Results")}>
-                    <a>Results</a>
-                </li>
-                <li onClick={() => props.handlePageChange("DogSledding")}>
-                    <a>DogSledding</a>
-                </li>
-            </ul>
-);
-            <p><a href="/">Reset</a></p>
-        
-            {/* <p> {props.message} </p> */}
-            </div>
-          
+const Navpills = props => (  
+            
+        <ul className="nav nav-tabs">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/Survey">Survey</Link></li>
+        <li><Link to="/DogSledding">DogSledding</Link></li>
+
+        </ul>                 
 );
 
 export default Navpills;

@@ -1,0 +1,21 @@
+.titlebox-home {   
+    border: thin sold grey;
+    background-size: 100%;
+    width: 100%;
+    min-height: 180px;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Times New Roman', sans-serif;
+    color:green;
+    margin-bottom: 20px;
+}
+
+.titlebox-home h1 {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.titlebox-home p {
+    font-size: 20px;
+}
+
