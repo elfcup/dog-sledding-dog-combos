@@ -24,29 +24,29 @@ class App extends Component {
 
 
   componentDidMount() {
-    }
+  }
 
   render() {
     return (
-     
 
-  <Router>
-    <div>
-        <Navpills
-          message={this.state.message}
-        />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/Survey" component={Survey} />
+
+      <Router>
+        <div>
+          <Navpills
+            message={this.state.message}
+          />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Survey" component={Survey} />
           <Route exact path="/DogSledding" component={DogSledding} />
-         
-        </div>
-        </Router>
 
-      
-     
+        </div>
+      </Router>
+
+
+
 
     );
-     };
+  };
 }
 
 

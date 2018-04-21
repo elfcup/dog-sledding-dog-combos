@@ -2,20 +2,20 @@ const breeds = [
     {
         name: "Poodle",
         image: "./img/poodle.jpg",
-        "score": [
+        score: [
             3,
             3
         ]
     }, {
-        "name": "Lhasa Apso",
-        "image": "./img/poodle.jpg",
-        "score": [
+        name: "Lhasa Apso",
+        image: "./img/poodle.jpg",
+        score: [
             1, 1
         ]
     }, {
-        "name": "Vizsla",
-        "image": "./img/lab.jpg",
-        "score": [
+        name: "Vizsla",
+        image: "./img/lab.jpg",
+        score: [
             5,
             5
         ]

@@ -10,9 +10,7 @@ const Results = props => (
             <div className="form-group">
                
             </div>
-            <div className="form-group">
-               
-            </div>
+           
     </div>
    
 );
