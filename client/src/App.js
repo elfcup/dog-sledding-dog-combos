@@ -2,11 +2,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import breeds from './breeds.json'
-import image from './breeds.json'
+// import breeds from './breeds.json'
+// import image from './breeds.json'
+import breeds from './breeds.js'
+import image from './breeds.js'
+
 import Wrapper from './components/Wrapper'
 import Navpills from './components/Navpills'
-import BreedCard from './components/BreedCard'
+// import BreedCard from './components/BreedCard'
 import Home from './components/Pages/Home'
 import Survey from './components/Pages/Survey'
 import Results from './components/Pages/Results'
@@ -40,18 +43,7 @@ class App extends Component {
         </Router>
 
       
-        // {/* <Home />
-        
-        // <Results/>
-        // <DogSledding/>
-        // {
-        //   this.state.breeds.map(breeds => (
-        //     <BreedCard
-        //       name={breeds.name}
-        //       image={breeds.image}
-        //     />
-        //   ))
-        // } */}
+     
 
     );
      };
