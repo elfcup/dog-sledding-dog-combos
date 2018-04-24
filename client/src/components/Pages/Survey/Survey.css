@@ -6,7 +6,7 @@
     text-align: center;
     vertical-align: center;
     font-family: 'Times New Roman', sans-serif;
-    color:red;
+    color:rgb(99, 5, 91);
     margin-bottom: 20px;
 }
 
@@ -17,5 +17,9 @@
 
 .titlebox-survey p {
     font-size: 20px;
+}
+
+h3 {
+    color: black;
 }
 

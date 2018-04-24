@@ -2,7 +2,11 @@ import React from "react";
 import "./Survey.css";
 // import breeds from "../../../breeds.json";
 import breeds from "../../../breeds.js";
-import Results from "../Results/Results.js";
+// import Results from "../Results/Results.js";
+import wallpaper from "../../../dogpack.js";
+import Wrapper from '../../../components/Wrapper';
+import BreedCard from '../../../components/BreedCard/BreedCard.js';
+import WallPaper from '../../../components/WallPaper/WallPaper.js';
 
 class Survey extends React.Component {
     constructor(props) {
@@ -36,15 +40,6 @@ class Survey extends React.Component {
         }, () => {
             console.log('state after answer ', this.state) 
         })
-
-        // this.setState({ 
-        //     answers: {
-        //         [event.target.name]: answerNumber
-        //     } 
-        // }, () => { 
-        //     console.log('state after answer ', this.state) 
-        // });
-
     }
 
     handleSubmit(event) {
@@ -105,8 +100,19 @@ renderPage = () => {
     else{
         return (
             <div className="titlebox-survey">
+
+                <Wrapper>
+                    {wallpaper.map(wallpaper => {
+                        return (
+                            <WallPaper name={wallpaper.name} image={wallpaper.wallImage} />
+                        );
+                    })
+                    }
+                </Wrapper>
+
+               
                 <h1>Dog Breed Choices</h1>
-                <p>Select two dogs to breed and discover how many bla bla bla bl!</p>
+                <p>Select two dogs to breed and discover how many bla bla bla bl!</p>              
 
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
@@ -114,61 +120,71 @@ renderPage = () => {
                         <h4>Select your activity level:</h4>
                         <select value={this.state.valueq1} onChange={this.handleChange} className="form-control" name="valueq1">
                             <option selected="selected" value="0" disabled selection>Please select:</option>
-                            <option value="1">1 Couch Potato</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 Marathon Runner</option>
+                            <option value="1">1. I am a Couch Potato</option>
+                            <option value="2">2.</option>
+                            <option value="3">3.</option>
+                            <option value="4">4.</option>
+                            <option value="5">5. I am a Marathon Runner</option>
                         </select>
                     </div>
+                    <br></br>
+                    <br></br>
                     <div className="form-group">
                         <h3><strong>Question 2</strong></h3>
                         <h4>How big is your backyard?</h4>
                         <select value={this.state.valueq2} onChange={this.handleChange} className="form-control" name="valueq2">
                             <option selected="selected" value="0" disabled selection>Please select:</option>
-                            <option value="1">1 I don't have a backyard</option>
-                            <option value="2">2 Postage Stamp</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 Football Field</option>
+                            <option value="1">1. I have an awesome backyard, but I will not let a dog in it</option>
+                            <option value="2">2. I don't have a backyard</option>
+                            <option value="3">3. Postage Stamp</option>
+                            <option value="4">4. Medium sized</option>
+                            <option value="5">5. Football Field</option>
                         </select>
                     </div>
+                    <br></br>
+                    <br></br>
                     <div className="form-group">
                         <h3><strong>Question 3</strong></h3>
                         <h4>Select grooming preferences:</h4>
                         <select value={this.state.valueq3} onChange={this.handleChange} className="form-control" name="valueq3">
                             <option selected="selected" value="0" disabled selection>Please select:</option>
-                            <option value="1">1 Bath once a month...if I feel like it</option>
-                            <option value="2">2 </option>
-                            <option value="3">3 </option>
-                            <option value="4">4 </option>
-                            <option value="5">5 Brush hair every day, needs to be taken to groomer every three months</option>
+                            <option value="1">1. I will never bathe a dog, I am too good for that</option>
+                            <option value="2">2. Bath once a month...if I feel like it</option>
+                            <option value="3">3. I will tolerate lots of shedding</option>
+                            <option value="4">4. Needs haircuts every three months</option>
+                            <option value="5">5. Brush hair every day, needs haircut every three months</option>
                         </select>
                     </div>
+                    <br></br>
+                    <br></br>
                     <div className="form-group">
                         <h3><strong>Question 4</strong></h3>
                         <h4>Temperment:</h4>
                         <select value={this.state.valueq4} onChange={this.handleChange} className="form-control" name="valueq4">
                             <option selected="selected" value="0" disabled selection>Please select:</option>
-                            <option value="1">1 Will likely go home with strangers</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 Guard Dog</option>
+                            <option value="1">1. A quiet dog that hardly moves</option>
+                            <option value="2">2. Loves people, including strangers</option>
+                            <option value="3">3. Middle Ground</option>
+                            <option value="4">4. Moderately Protective</option>
+                            <option value="5">5. Guard Dog</option>
                         </select>
                     </div>
+                    <br></br>
+                    <br></br>
                     <div className="form-group">
                         <h3><strong>Question 5</strong></h3>
                         <h4>For outdoor activities, what best suits you?</h4>
                         <select value={this.state.valueq5} onChange={this.handleChange} className="form-control" name="valueq5">
                             <option selected="selected" value="0" disabled selection>Please select:</option>
-                            <option value="1">1 Walking</option>
-                            <option value="2">2 Biking (dog in basket)</option>
-                            <option value="3">3 Hiking</option>
-                            <option value="4">4 Biking (dog running along side)</option>
-                            <option value="5">5 Marathon Runner</option>
+                            <option value="1">1. I don't ever go outside, I am afraid of the sun</option>
+                            <option value="2">2. Walking</option>
+                            <option value="3">3. Hiking</option>
+                            <option value="4">4. Biking (dog running along side)</option>
+                            <option value="5">5. Marathon Runner</option>
                         </select>
                     </div>
+                    <br></br>
+                    <br></br>
                     <br></br>
                     <div className="text-right">
                         <button type="submit" className="btn btn-primary btn-md" id="submit"><span className="glyphicon glyphicon-fire"></span>Submit</button>
