@@ -1,7 +1,8 @@
 const breeds = [
     {
         name: "Huksy",
-        image: "./img/husky_1.jpg",
+        image: "./img/husky_1.JPG",
+        dogsledding: "",
         info: "",
         score: [
             4,
@@ -13,6 +14,7 @@ const breeds = [
     },  {
         name: "Maltese",
         image: "./img/maltese_1.jpg",
+        dogsledding: "elfiemaltese_sled",
         info: "",
         score: [
             2,
@@ -23,7 +25,8 @@ const breeds = [
         ]
     },  {
         name: "Poodle",
-        image: "./img/poodle_1.jpg",
+        image: "./img/poodle_1.JPG",
+        dogsledding: "",
         info: "",
         score: [
             3,
@@ -34,7 +37,8 @@ const breeds = [
         ]
     }, {
         name: "Lhasa Apso",
-        image: "./img/lhasa_1.jpg",
+        image: "./img/lhasa_1.JPG",
+        dogsledding: "",
         info: "",
         score: [
             1, 
@@ -45,7 +49,8 @@ const breeds = [
         ]
     }, {
         name: "Vizsla",
-        image: "./img/vizsla_1.jpg",
+        image: "./img/vizsla_1.JPG",
+        dogsledding: "",
         info: "",
         score: [
             5,
@@ -56,7 +61,7 @@ const breeds = [
         ]
     }, {
         name: "A dog may not be a good choice for you",
-        image: "./img/dunce_1",
+        image: "./img/dunce_1.JPG",        
         info: "According to your answers, it is very likely that getting a dog would not suit you very well. Perhaps a plushy or a robot would be better for you.",
         score: [
             1,

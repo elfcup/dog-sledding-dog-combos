@@ -1,5 +1,9 @@
 import React from "react";
 import "./DogSledding.css";
+// import "../../../../public/img/elfiemaltese_sled.jpg";
+var elfieSledding = require("./elfiemaltese_sled.jpg");
+
+    
 
 const DogSledding = props => (
     <div className="titlebox-dogsledding">
@@ -8,6 +12,8 @@ const DogSledding = props => (
     
        
             <div className="form-group">
+           
+            < img src={elfieSledding} />
                
             </div>
             <div className="form-group">

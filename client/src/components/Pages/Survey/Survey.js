@@ -4,9 +4,10 @@ import "./Survey.css";
 import breeds from "../../../breeds.js";
 // import Results from "../Results/Results.js";
 import dogpack from "../../../dogpack.js";
-import Wrapper from '../../../components/Wrapper';
+// import Wrapper from '../../../components/Wrapper';
 import BreedCard from '../../../components/BreedCard/BreedCard.js';
 import WallPaper from '../../../components/WallPaper/WallPaper.js';
+var dogpackPaper = require("./dogpack.jpg");
 
 class Survey extends React.Component {
     constructor(props) {
@@ -100,15 +101,22 @@ renderPage = () => {
     else{
         return (
             <div className="titlebox-survey">
+           
 
-                <Wrapper>
+                <div className="dogpackImage">
+
+                    < img src={dogpackPaper} />
+
+                </div>
+
+                {/* <Wrapper>
                     {dogpack.map(dogpack => {
                         return (
                             <WallPaper name={dogpack.name} image={dogpack.image} />
                         );
                     })
                     }
-                </Wrapper>
+                </Wrapper> */}
 
                
                 <h1>Dog Breed Choices</h1>
