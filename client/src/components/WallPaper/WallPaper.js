@@ -4,7 +4,7 @@ import "./WallPaper.css";
 const WallPaper = props => (
     <div className="card">
         <div className="img-container">
-            <img alt={props.name} src={props.wallImage}/>
+            <img alt={props.name} src={props.image}/>
         </div>
     </div>
     

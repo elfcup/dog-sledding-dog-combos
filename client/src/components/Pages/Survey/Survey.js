@@ -3,7 +3,7 @@ import "./Survey.css";
 // import breeds from "../../../breeds.json";
 import breeds from "../../../breeds.js";
 // import Results from "../Results/Results.js";
-import wallpaper from "../../../dogpack.js";
+import dogpack from "../../../dogpack.js";
 import Wrapper from '../../../components/Wrapper';
 import BreedCard from '../../../components/BreedCard/BreedCard.js';
 import WallPaper from '../../../components/WallPaper/WallPaper.js';
@@ -102,9 +102,9 @@ renderPage = () => {
             <div className="titlebox-survey">
 
                 <Wrapper>
-                    {wallpaper.map(wallpaper => {
+                    {dogpack.map(dogpack => {
                         return (
-                            <WallPaper name={wallpaper.name} image={wallpaper.wallImage} />
+                            <WallPaper name={dogpack.name} image={dogpack.image} />
                         );
                     })
                     }

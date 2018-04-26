@@ -1,7 +1,7 @@
 const dogpack = [
     {
         name: "dogpack",
-        wallImage: "./img/dogpack.jpg",
+        image: "./img/dogpack.jpg",
     }
 ]
 
