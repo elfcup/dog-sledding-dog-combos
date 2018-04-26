@@ -12,6 +12,7 @@ import Navpills from './components/Navpills'
 // import BreedCard from './components/BreedCard'
 import Home from './components/Pages/Home'
 import Survey from './components/Pages/Survey'
+import Register from './components/Pages/Register'
 // import Results from './components/Pages/Results'
 import DogSledding from './components/Pages/DogSledding'
 
@@ -35,6 +36,7 @@ class App extends Component {
           <Navpills
             message={this.state.message}
           />
+          <Route exact path="/Register" component={Register} />
           <Route exact path="/" component={Home} />
           <Route exact path="/Survey" component={Survey} />
           <Route exact path="/DogSledding" component={DogSledding} />

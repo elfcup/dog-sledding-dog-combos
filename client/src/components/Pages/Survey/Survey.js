@@ -119,9 +119,9 @@ renderPage = () => {
                 </Wrapper> */}
 
                
-                <h1>Dog Breed Choices</h1>
-                <p>Select two dogs to breed and discover how many bla bla bla bl!</p>              
-
+                <h1>Take Survey!</h1>
+                <p>Please select an item from each question to help best select which dog breed would best suit you.</p>              
+                <br></br>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <h3><strong>Question 1</strong></h3>
