@@ -10,7 +10,7 @@
     text-align: left;
 }
 
-/* .card > .img-container {
+.card > .img-container {
     width: auto;
     height: auto;
     overflow: hidden;
@@ -20,5 +20,5 @@
     margin-top: 5px;
     margin-bottom: 5px;
     height: 150px;
-} */
+}
 

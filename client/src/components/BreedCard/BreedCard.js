@@ -7,8 +7,7 @@ const BreedCard = props => (
             <img alt={props.name} src={props.image} />
           
         </div>
-    </div>
-    
+    </div>    
 );
 
 export default BreedCard;

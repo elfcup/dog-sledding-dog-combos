@@ -1,18 +1,15 @@
 
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
 import './App.css';
 import breeds from './breeds.js'
 import image from './breeds.js'
-
 // import Wrapper from './components/Wrapper'
 import Navpills from './components/Navpills'
 // import BreedCard from './components/BreedCard'
 import Home from './components/Pages/Home'
 import Survey from './components/Pages/Survey'
 import Register from './components/Pages/Register'
-// import Results from './components/Pages/Results'
 import DogSledding from './components/Pages/DogSledding'
 
 class App extends Component {
@@ -22,13 +19,11 @@ class App extends Component {
     image: image,
   }
 
-
   componentDidMount() {
   }
 
   render() {
     return (
-
 
       <Router>
         <div>
@@ -43,14 +38,8 @@ class App extends Component {
         </div>
       </Router>
 
-
-
-
     );
-  };    
-  
+  };      
 }
-
-
 
 export default App;

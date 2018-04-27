@@ -3,7 +3,6 @@ import "./DogSledding.css";
 import { Button } from 'react-bootstrap';
 import { ButtonToolbar } from 'react-bootstrap';
 import breeds from "../../../breeds.js";
-// import "../../../../public/img/elfiemaltese_sled.jpg";
 var elfieMalteseSledding = require("./elfiemaltese_sled.jpg");
 var elfieHuskySledding = require("./elfiehusky_sled.jpg");
 
@@ -22,7 +21,6 @@ const DogSledding = props => (
         </div>
     </div>
 );
-
 
 export default DogSledding;
 

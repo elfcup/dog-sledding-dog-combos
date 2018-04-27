@@ -1,15 +1,11 @@
 import React from "react";
 import "./Survey.css";
 import { Form } from "react-bootstrap";
-// import breeds from "../../../breeds.json";
 import breeds from "../../../breeds.js";
-// import Results from "../Results/Results.js";
 import dogpack from "../../../dogpack.js";
 // import Wrapper from '../../../components/Wrapper';
 import BreedCard from '../../../components/BreedCard/BreedCard.js';
-import WallPaper from '../../../components/WallPaper/WallPaper.js';
 var dogpackPaper = require("./dogpack.jpg");
-
 
 class Survey extends React.Component {
     constructor(props) {
@@ -107,8 +103,7 @@ renderPage = () => {
             
             <div className="titlebox-survey">
                 <br></br>
-                <br></br>
-           
+                <br></br>           
 
                 <div className="dogpackImage">
 
@@ -202,12 +197,7 @@ renderPage = () => {
             </div>
         );
     }
-
-}//end of renderPage
-//     {
-//     this.state.bestMatch && (
-//         <div> Here is the best match</div>)
-// } 
+}
 
     render() {
         return ( 
