@@ -2,6 +2,9 @@
     border: thin sold grey;
     background-size: 100%;
     width: 100%;
+    padding-top: 20px;
+    padding-left: 380px;
+    padding-right: 380px;
     min-height: 160px;
     text-align: center;
     vertical-align: center;
@@ -25,10 +28,31 @@ h3 {
 
 .dogpackImage {
     max-height: 350px;
+    display: flex;
     /* border:thin solid purple; */
 }
 .dogpackImage img 
 {
     max-height:350px;
+    display: flex;
 }
+
+.resultsImage img 
+{
+    max-height:350px;
+}
+
+.makeStuffCentered
+{
+    content: center;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.makeWordsCentered
+{
+    text-align: center;
+}
+
+
 

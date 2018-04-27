@@ -1,9 +1,8 @@
 
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import './App.css';
-// import breeds from './breeds.json'
-// import image from './breeds.json'
 import breeds from './breeds.js'
 import image from './breeds.js'
 

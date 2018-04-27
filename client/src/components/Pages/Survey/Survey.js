@@ -1,5 +1,6 @@
 import React from "react";
 import "./Survey.css";
+import { Form } from "react-bootstrap";
 // import breeds from "../../../breeds.json";
 import breeds from "../../../breeds.js";
 // import Results from "../Results/Results.js";
@@ -8,6 +9,7 @@ import dogpack from "../../../dogpack.js";
 import BreedCard from '../../../components/BreedCard/BreedCard.js';
 import WallPaper from '../../../components/WallPaper/WallPaper.js';
 var dogpackPaper = require("./dogpack.jpg");
+
 
 class Survey extends React.Component {
     constructor(props) {
@@ -93,14 +95,19 @@ class Survey extends React.Component {
 renderPage = () => {
     if(this.state.bestMatch)
     {
-        return (<div><div> Here is the best match</div>
-        <div>{this.state.bestMatch.name}
+        return (<div className="makeStuffCentered"><div><h3 className="makeWordsCentered"> Here is the best match according to your answers:</h3></div>
+        <br></br>
+        <div className="resultsImage"><h1><strong>{this.state.bestMatch.name}</strong></h1>
+        <br></br>
                 <img src={this.state.bestMatch.image}/>
         </div></div>);
     }
     else{
         return (
+            
             <div className="titlebox-survey">
+                <br></br>
+                <br></br>
            
 
                 <div className="dogpackImage">
@@ -108,30 +115,21 @@ renderPage = () => {
                     < img src={dogpackPaper} />
 
                 </div>
-
-                {/* <Wrapper>
-                    {dogpack.map(dogpack => {
-                        return (
-                            <WallPaper name={dogpack.name} image={dogpack.image} />
-                        );
-                    })
-                    }
-                </Wrapper> */}
-
                
                 <h1>Take Survey!</h1>
                 <p>Please select an item from each question to help best select which dog breed would best suit you.</p>              
                 <br></br>
                 <form onSubmit={this.handleSubmit}>
+                <Form>
                     <div className="form-group">
                         <h3><strong>Question 1</strong></h3>
                         <h4>Select your activity level:</h4>
                         <select value={this.state.valueq1} onChange={this.handleChange} className="form-control" name="valueq1">
                             <option selected="selected" value="0" disabled selection>Please select:</option>
                             <option value="1">1. I am a Couch Potato</option>
-                            <option value="2">2.</option>
-                            <option value="3">3.</option>
-                            <option value="4">4.</option>
+                            <option value="2">2. Mildly Active</option>
+                            <option value="3">3. Moderatly Active</option>
+                            <option value="4">4. Very Active</option>
                             <option value="5">5. I am a Marathon Runner</option>
                         </select>
                     </div>
@@ -199,7 +197,7 @@ renderPage = () => {
                     </div>
 
 
-
+            </Form>
                 </form>
             </div>
         );
