@@ -4,16 +4,16 @@ const pictures = [
         image: "img/husky.JPG",
     }, {
         name: "Chi",
-        image: "./img/chi2.jpg",
+        image: "./img/chi.JPG",
     },  {
         name: "Maltese",
-        image: "./img/maltese.jpg",
+        image: "./img/maltese.JPG",
     }, {
         name: "Labrador",
-        image: "./img/lab.jpg",
+        image: "./img/lab.JPG",
     }, {
         name: "Poodle",
-        image: "./img/poodle.jpg",
+        image: "./img/poodle.JPG",
     }
 ]
 
