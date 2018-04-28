@@ -53,7 +53,7 @@ class Register extends Component {
         };
         console.log("payload ", payload);
         axios
-            .post("http://localhost:8089" + "/api/user/register", payload)
+            .post("https://fast-ridge-37401.herokuapp.com" + "/api/user/register", payload)
             .then(response => {
                 console.log(response);
                 if (response.status === 200) {
