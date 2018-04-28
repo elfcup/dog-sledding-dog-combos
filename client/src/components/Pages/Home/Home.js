@@ -12,9 +12,9 @@ class Home extends React.Component {
                 <h1>Thinking about adopting a dog?</h1>
                 <p>Please enter the survey and answer the following questions to help determine which breed of dog would best suit your life style.</p>
                 <Wrapper>
-                    {pictures.map(pictures => {
+                    {pictures.map(picture => {
                         return (
-                            <BreedCard name={pictures.name} image={pictures.image} />
+                            <BreedCard name={picture.name} image={picture.image} />
                         );
                     })
                     }
