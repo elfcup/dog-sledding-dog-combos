@@ -1,7 +1,7 @@
 const pictures = [
     {
         name: "Huksy",
-        image: "./img/husky.jpg",
+        image: "img/husky.jpg",
     }, {
         name: "Chi",
         image: "./img/chi.jpg",
