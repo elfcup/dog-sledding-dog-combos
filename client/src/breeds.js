@@ -13,7 +13,7 @@ const breeds = [
         ]
     },  {
         name: "Maltese",
-        image: "./img/maltese_1.jpg",
+        image: "./img/maltese_1.JPG",
         dogsledding: "elfiemaltese_sled",
         info: "",
         score: [
