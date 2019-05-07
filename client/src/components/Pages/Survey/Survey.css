@@ -11,6 +11,8 @@
     font-family: 'Times New Roman', sans-serif;
     color:rgb(99, 5, 91);
     margin-bottom: 20px;
+
+
 }
 
 .titlebox-survey h1 {
@@ -28,18 +30,20 @@ h3 {
 
 .dogpackImage {
     max-height: 350px;
-    display: flex;
+    
+
     /* border:thin solid purple; */
 }
 .dogpackImage img 
 {
     max-height:350px;
-    display: flex;
+    display:flex;
 }
 
 .resultsImage img 
 {
     max-height:350px;
+    display:flex;
 }
 
 .makeStuffCentered

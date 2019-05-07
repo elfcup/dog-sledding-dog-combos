@@ -2,9 +2,10 @@ import React from "react";
 import "./Survey.css";
 import { Form } from "react-bootstrap";
 import breeds from "../../../breeds.js";
-import dogpack from "../../../dogpack.js";
+
+// import dogpack from "../../../dogpack.js";
 // import Wrapper from '../../../components/Wrapper';
-import BreedCard from '../../../components/BreedCard/BreedCard.js';
+// import BreedCard from '../../../components/BreedCard/BreedCard.js';
 var dogpackPaper = require("./dogpack.jpg");
 
 class Survey extends React.Component {
@@ -104,12 +105,14 @@ renderPage = () => {
             <div className="titlebox-survey">
                 <br></br>
                 <br></br>           
-
+                
                 <div className="dogpackImage">
-
+                    
                     < img src={dogpackPaper} />
-
+                
                 </div>
+               
+                
                
                 <h1>Take Survey!</h1>
                 <p>Please select an item from each question to help best select which dog breed would best suit you.</p>              

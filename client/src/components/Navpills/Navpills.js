@@ -6,7 +6,7 @@ import { ButtonToolbar } from 'react-bootstrap';
 
 const Navpills = props => (          
     <ButtonToolbar className="navButtons">
-        <Button><Link to="/Register">Register</Link></Button>
+        {/* <Button><Link to="/Register">Register</Link></Button> */}
         <Button><Link to="/">Home</Link></Button>
         <Button><Link to="/Survey">Survey</Link></Button>
         <Button><Link to="/DogSledding">DogSledding</Link></Button>
