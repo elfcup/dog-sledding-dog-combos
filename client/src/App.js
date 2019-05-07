@@ -30,7 +30,7 @@ class App extends Component {
           <Navpills
             message={this.state.message}
           />
-          {/* <Route exact path="/Register" component={Register} /> */}
+
           <Route exact path="/" component={Home} />
           <Route exact path="/Survey" component={Survey} />
           <Route exact path="/DogSledding" component={DogSledding} />
