@@ -9,7 +9,7 @@ var elfieHuskySledding = require("./elfiehusky_sled.jpg");
 const DogSledding = props => (
     <div className="titlebox-dogsledding">
         <h1>Dog Sledding!</h1>
-        <p>How many Maltese dogs would be needed to pull a dog sled, the equivalance of an 8-husky dog team?</p>
+        <p>How many Maltese dogs would be required to pull a dog sled, the equivalance of an 8-husky dog team?</p>
         < img src={elfieHuskySledding} />
         < img src={elfieMalteseSledding} />
 
